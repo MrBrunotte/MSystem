@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ManagementSystem.Models.Machine>
+
+@{
+    ViewData["Title"] = "Machine Management";
+}
+
+<h1>Machine Management</h1>
+<div class="centerImage">
+<img class="borderRadius" src="/img/newMachine.jpg" alt="New Server Machines" />
+<p class="pMargin">
+    <a class="anchorsNewBtn" asp-action="Create">Add New Machine</a>
+</p>
+</div>
+<br />
+<table class="table">
+    <thead class="borderBottom">
+        <tr>
+            <th class="myHeader">
+                Name of Machine
+                <br />
+            </th>
+            <th class="myHeader">
+                Guid id
+            </th>
+            <th class="myHeader center">
+                Status
+            </th>
+            <th class="myHeader">
+                Data
+            </th>
+            <th class="myHeader">
+                Action button
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MachineName)
+                </td>
+                <td class="machineId">
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td class="center">
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td class="dataField">
+                    @Html.DisplayFor(modelItem => item.Data)
+                </td>
+                <td>
+                    <a class="anchorsSendCommandBtn float-right" asp-action="Edit" asp-route-id="@item.Id">Send Command</a>
+                    @*<a class="anchorsSendCommandBtn" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a class="anchorsSendCommandBtn" asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

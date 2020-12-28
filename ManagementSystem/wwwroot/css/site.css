@@ -1,0 +1,149 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+h1 {
+    text-align: center;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/*My Style*/
+body {
+    margin-bottom: 60px;
+    font-family: Roboto;
+    min-width: 1450px;
+    overflow: auto;
+    background-color: lightgray;
+}
+a {
+    text-decoration: none !important;
+    color: black;
+}
+a:hover,
+.anchorsNewBtn:hover,
+.anchorsSendCommandBtn:hover {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+.anchorsNewBtn,
+.anchorsSendCommandBtn {
+    text-decoration: none !important;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: gray;
+}
+.anchorsSendCommandBtn {
+
+}
+.myHeader {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.borderBottom {
+    border-bottom: 2px solid black;
+}
+.machineId {
+    font-size: 11px;
+}
+.center {
+    text-align: center;
+}
+.centerImage {
+    text-align:center;
+    padding: 25px;
+}
+.pMargin {
+    margin-top:25px;
+}
+.dataField {
+    min-width: 200px;
+    max-width: 400PX;
+    height: auto;
+}
+.borderRadius {
+    border-radius: 25px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 30px; /* Vertically center the text there */
+    text-align: center;
+    font-size: .8rem;
+    background-color: #d7d7d7;
+}
